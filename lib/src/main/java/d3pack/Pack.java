@@ -3,8 +3,10 @@
  */
 package d3pack;
 
+import d3pack.LCG;
+
+/***
+ * Pack
+ */
 public class Pack {
-    public boolean someLibraryMethod() {
-        return true;
-    }
 }
