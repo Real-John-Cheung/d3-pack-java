@@ -21,14 +21,15 @@ public class Array {
         Circle t;
 
         while (m > 0) {
-            i = (int)Math.floor(LCG.next() * m);
-            m --;
+            i = (int) Math.floor(LCG.next() * m);
+            m--;
             t = array[m];
             array[m] = array[i];
             array[i] = t;
 
-            return array;
         }
+        
+        return array;
     }
     
 }
