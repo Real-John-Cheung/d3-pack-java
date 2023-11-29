@@ -1,8 +1,6 @@
 package d3pack;
 import java.util.Arrays;
 
-import javax.crypto.Cipher;
-
 import d3pack.Circle;
 import d3pack.LCG;
 
