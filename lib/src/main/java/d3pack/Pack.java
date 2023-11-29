@@ -3,10 +3,40 @@
  */
 package d3pack;
 
+import d3pack.Circle;
+import d3pack.Enclose;
 import d3pack.LCG;
+import d3pack.Siblings;
 
 /***
  * Pack
  */
 public class Pack {
+
+    /**
+     * 
+     * @return
+     */
+    static String version(){
+        return "0.0.1";
+    }
+
+    /**
+     * pack siblings circles together
+     * @param circles
+     * @return the packed circles
+     */
+    static Circle[] packSiblings(Circle[] circles){
+        return Siblings.packSiblings(circles);
+    }
+
+    /**
+     * compute the smallest circles that encloses the circles
+     * @param circles
+     * @return the outer circles
+     */
+    static Circle packEnclose(Circle[] circles) {
+        return Enclose.packEnclose(circles);
+    }
+
 }
